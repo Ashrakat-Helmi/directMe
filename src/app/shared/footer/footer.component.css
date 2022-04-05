@@ -1,0 +1,23 @@
+footer {
+  background-color: #241e1e;
+}
+
+.logo {
+  width: 200px;
+}
+
+.clrfot {
+  opacity: 0.87;
+  font-family: Roboto;
+  font-size:18;
+  text-align: left;
+  color: #fff;
+}
+li a{
+  color: #fff;
+  text-decoration: none;
+}
+a i{
+  font-size: 25px;
+  color: #fff;
+}

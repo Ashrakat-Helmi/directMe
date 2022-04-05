@@ -1,0 +1,35 @@
+.Mentors {
+  font-family: Roboto;
+  font-size: 75px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+  display: inline !important;
+}
+.hand{
+    font-size: 65px;
+margin-left: 10px;
+    color: #f3d2a2;
+}
+
+.nav-link {
+  display: inline !important;
+}
+
+a {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 5px 5px 18px #707070;
+  text-align: center;
+}
+
+.clr1 {
+  color: #0b3b4f;
+}
+.custom-control{
+    padding: 0 !important;
+}

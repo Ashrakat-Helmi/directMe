@@ -1,0 +1,37 @@
+<div class="w-25 mx-auto mt-5">
+  <h1 class="font-weight-bold">Login</h1>
+  <p style="opacity: 0.6;">Continue your mentorship journey online.</p>
+  <p *ngIf="error" class="m-2" style="color: red;"> {{error}}</p>
+  <form [formGroup]='loginForm' (ngSubmit)="submitLoginForm(loginForm)">
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <div *ngIf="loginForm.get('email')?.errors != null &&
+        loginForm.get('email')?.touched" style="color: red;">
+        <p *ngIf="loginForm.get('email')?.errors?.required">Email is required</p>
+        <p *ngIf="loginForm.get('email')?.errors?.email">Email Invaild</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="Password">
+      <div *ngIf="loginForm.get('password')?.errors != null &&
+        loginForm.get('password')?.touched" style="color: red;">
+        <p *ngIf="loginForm.get('password')?.errors?.required">password is required</p>
+        <p *ngIf="loginForm.get('password')?.errors?.minlength">password must be more than 8</p>
+      </div>
+    </div>
+    <button [disabled]='loginForm.invalid' type="submit" class="btn btnCol mx-auto w-100 mb-5"
+      style="display: block;">Login</button>
+  </form>
+
+</div>
+<div class=" d-flex justify-content-center">
+    <div class="col-lg-3"><img
+        src="../../assets/img/casual-life-3d-girl-and-boy-sitting-on-the-floor-and-reading-books-1.png" alt=""
+        class="img-fluid"></div>
+    <div class="col-lg-3"><img src="../../assets/img/casual-life-3d-reading.png" alt="" class="img-fluid"></div>
+    <div class="col-lg-3"><img src="../../assets/img/casual-life-3d-man-and-woman-sitting-in-chairs.png" alt=""
+        class="img-fluid"></div>
+  </div>

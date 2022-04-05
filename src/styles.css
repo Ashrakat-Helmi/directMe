@@ -1,0 +1,16 @@
+
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: Roboto;
+}
+.clr1 {
+  color: #0b3b4f;
+}
+
+.clr2 {
+  color: #000;
+}
+
+.clr3 {
+  color: #fff;
+}

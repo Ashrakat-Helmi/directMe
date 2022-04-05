@@ -1,0 +1,54 @@
+<div class="w-25 mx-auto mt-5">
+  <h1 class="font-weight-bold">Sign up</h1>
+  <p style="opacity: 0.6;">Start your mentorship journey today.</p>
+   <p *ngIf="error" class="m-2" style="color: red;"> {{error}}</p>
+  <form [formGroup]='registerForm' (ngSubmit)="submitRegisterForm(registerForm)">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input formControlName="name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
+      <div *ngIf="registerForm.get('name')?.errors != null &&
+        registerForm.get('name')?.touched" style="color: red;">
+        <p *ngIf="registerForm.get('name')?.errors?.required"> Name is required</p>
+        <p *ngIf="registerForm.get('name')?.errors?.minlength"> Name must be more than 3</p>
+        <p *ngIf="registerForm.get('name')?.errors?.maxlength"> Name must be less than 20</p>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input formControlName="age" type="number" class="form-control" id="age" aria-describedby="emailHelp">
+      <div *ngIf="registerForm.get('age')?.errors != null &&
+      registerForm.get('age')?.touched" style="color: red;">
+        <p *ngIf="registerForm.get('age')?.errors?.required">age  is required</p>
+        <p *ngIf="registerForm.get('age')?.errors?.min">age  must be more than 18</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <div *ngIf="registerForm.get('email')?.errors != null &&
+      registerForm.get('email')?.touched" style="color: red;">
+        <p *ngIf="registerForm.get('email')?.errors?.required">Email is required</p>
+        <p *ngIf="registerForm.get('email')?.errors?.email">Email Invaild</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input formControlName="password" type="password" class="form-control" id="Password">
+      <div *ngIf="registerForm.get('password')?.errors != null &&
+      registerForm.get('password')?.touched" style="color: red;">
+        <p *ngIf="registerForm.get('password')?.errors?.required">password is required</p>
+        <p *ngIf="registerForm.get('password')?.errors?.minlength">password must be more than 8</p>
+      </div>
+    </div>
+    <button [disabled]='registerForm.invalid' type="submit" class="btn btnCol mx-auto w-100 mb-5" style="display: block;">Sign up</button>
+  </form>
+</div>
+<div class=" d-flex justify-content-center">
+  <div class="col-lg-3"><img
+      src="../../assets/img/casual-life-3d-girl-and-boy-sitting-on-the-floor-and-reading-books-1.png" alt=""
+      class="img-fluid"></div>
+  <div class="col-lg-3"><img src="../../assets/img/casual-life-3d-reading.png" alt="" class="img-fluid"></div>
+  <div class="col-lg-3"><img src="../../assets/img/casual-life-3d-man-and-woman-sitting-in-chairs.png" alt=""
+      class="img-fluid"></div>
+</div>

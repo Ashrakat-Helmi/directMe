@@ -1,0 +1,23 @@
+.myNav{
+    font-family: Roboto;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+ 
+}
+.navCol {
+  color: #ffffff;    
+  background-color: #241e1e;
+}
+a{
+  color: #ffffff;
+}
+
+.logo{
+  width: 200px;
+ 
+}
