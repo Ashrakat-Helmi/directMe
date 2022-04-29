@@ -23,7 +23,7 @@
 
 .h1Font {
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 
   margin-top: 70px;
@@ -73,7 +73,7 @@ input {
   background-color: rgba(47, 150, 193, 0.53);
   width: 223px;
   height: 223px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   padding: 67px 67.4px 67.4px 68px;
   border-radius: 50%;
 }
@@ -82,9 +82,9 @@ input {
   text-align: center;
   color: #000;
   font-family: Roboto;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
-  margin: 32px 133px 1px 72px;
+ /* margin: 32px 133px 1px 72px; */
 }
 
 .picon {
@@ -94,7 +94,7 @@ input {
   font-family: Roboto;
   font-size: 22px;
   font-weight: bold;
-  margin: 32px 60px 1px 35px;
+  /* margin: 32px 60px 1px 35px; */
 }
 
 .Text-Style {
@@ -116,10 +116,6 @@ input {
 
 .btnMentor {
 
-  width: 383px;
-  height: 55px;
-  margin: 50px 549px 10px 567px;
-  padding: 15px 83px 16px;
   border-radius: 4px;
 
 

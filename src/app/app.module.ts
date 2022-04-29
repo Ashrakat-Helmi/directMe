@@ -14,7 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { MentorSignUpComponent } from './mentors/mentor-sign-up/mentor-sign-up.component';
 import { MProfileComponent } from './mentors/m-profile/m-profile.component';
-
+import { AngularFittextModule } from "angular-fittext";
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,8 @@ import { MProfileComponent } from './mentors/m-profile/m-profile.component';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFittextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
