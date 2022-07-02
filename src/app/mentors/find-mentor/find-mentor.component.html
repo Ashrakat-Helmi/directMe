@@ -13,19 +13,19 @@
       <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
         <a class="nav-link" id="v-pills-item1-tab" data-toggle="pill" href="#v-pills-item1" role="tab"
-          aria-controls="v-pills-item1" aria-selected="true">UI/UX Design</a>
-
-
-        <a class="nav-link" id="v-pills-item1-tab" data-toggle="pill" href="#v-pills-item1" role="tab"
           aria-controls="v-pills-item1" aria-selected="true">Web development</a>
 
 
-        <a class="nav-link" id="v-pills-item1-tab" data-toggle="pill" href="#v-pills-item1" role="tab"
-          aria-controls="v-pills-item1" aria-selected="true">Android</a>
+        <a class="nav-link" id="v-pills-item2-tab" data-toggle="pill" href="#v-pills-item2" role="tab"
+          aria-controls="v-pills-item2" aria-selected="true">UI/UX Design</a>
 
 
-        <a class="nav-link" id="v-pills-item1-tab" data-toggle="pill" href="#v-pills-item1" role="tab"
-          aria-controls="v-pills-item1" aria-selected="true">Flutter</a>
+        <a class="nav-link" id="v-pills-item3-tab" data-toggle="pill" href="#v-pills-item3" role="tab"
+          aria-controls="v-pills-item3" aria-selected="true">Android</a>
+
+
+        <a class="nav-link" id="v-pills-item4-tab" data-toggle="pill" href="#v-pills-item4" role="tab"
+          aria-controls="v-pills-item4" aria-selected="true">others</a>
 
       </div>
     </div>
@@ -35,7 +35,7 @@
           <div class="row justify-content-around">
             <div class="col-lg-4 mt-5 ">
               <div class="card" style="width: 16rem;">
-                <img src="../../../assets/img/casual-life-3d-female-metis-t-shirt-pose-3.png" class="card-img-top" alt="...">
+                <img src="../../../assets/img/Picsart_22-02-01_19-50-16-345.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Ashrakat Helmi</h5>
                   <p class="card-text clr1">front end</p>
@@ -46,7 +46,7 @@
             </div>
             <div class="col-lg-4 mt-5">
               <div class="card" style="width: 16rem;">
-                <img src="../../../assets/img/casual-life-3d-female-metis-t-shirt-pose-3.png" class="card-img-top" alt="...">
+                <img src="../../../assets/img/mina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Mina Hany</h5>
                   <p class="card-text clr1">back end</p>
@@ -55,28 +55,27 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mt-5">
-              <div class="card" style="width: 16rem;">
-                <img src="../../../assets/img/casual-life-3d-female-metis-t-shirt-pose-3.png" class="card-img-top" alt="...">
+           
+            
+            
+            
+            <div *ngFor="let mentor of mentorData" class="col-lg-4 mt-5">
+              <div class="card">
+                <img src="" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Shrouk Osama</h5>
-                  <p class="card-text clr1">Uncategorized</p>
+                  <h5 class="card-title">{{mentor.fname}}  </h5>
+                  <p class="card-text clr1">{{mentor.jobTitle}}</p>
                   <p class="card-text">Available</p>
-                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                  <a routerLink="/profile" class="card-link">Read more</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mt-5">
-              <div class="card" style="width: 16rem;">
-                <img src="../../../assets/img/casual-life-3d-female-metis-t-shirt-pose-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Zeyad Ahmed</h5>
-                  <p class="card-text clr1">Cyber Security</p>
-                  <p class="card-text">Available</p>
-                  <a routerLink="/mProfile" class="card-link">Read more</a>
-                </div>
-              </div>
-            </div>
+            
+
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="v-pills-item2" role="tabpanel" aria-labelledby="v-pills-item2-tab">
+          <div class="row justify-content-around">
             <div class="col-lg-4 mt-5">
               <div class="card" style="width: 16rem;">
                 <img src="../../../assets/img/casual-life-3d-female-metis-t-shirt-pose-3.png" class="card-img-top" alt="...">
@@ -114,7 +113,121 @@
 
           </div>
         </div>
+        <div class="tab-pane fade show " id="v-pills-item3" role="tabpanel" aria-labelledby="v-pills-item3-tab">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 mt-5 ">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/eslam.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Eslam Medhat</h5>
+                  <p class="card-text clr1">Firebase, Android</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            
+           
+            
+            
+            <div *ngFor="let mentor of mentorData" class="col-lg-4 mt-5">
+              <div class="card">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{mentor.fname}}  </h5>
+                  <p class="card-text clr1">{{mentor.jobTitle}}</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/profile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            
 
+          </div>
+        </div>
+        <div class="tab-pane fade show " id="v-pills-item4" role="tabpanel" aria-labelledby="v-pills-item4-tab">
+          <div class="row justify-content-around">
+            <div class="col-lg-4 mt-5 ">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/nada.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nada Nasser</h5>
+                  <p class="card-text clr1"> Embedded System </p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/tudo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tawadros Gamal</h5>
+                  <p class="card-text clr1">Data Science</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/Msayed2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mohamed Sayed</h5>
+                  <p class="card-text clr1">Cyber Security</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/abdulmegid.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Abdulmajid Ali</h5>
+                  <p class="card-text clr1">Cloud Computing</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/Asobhy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ahmed Sobhy</h5>
+                  <p class="card-text clr1">entrepreneurship ,IOT</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/mProfile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+              <div class="card" style="width: 16rem;">
+                <img src="../../../assets/img/zeyad.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zeyad Ahmed</h5>
+                  <p class="card-text clr1">software Engineering</p>
+                  <p class="card-text">Available</p>
+                  <a href="#" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div *ngFor="let mentor of mentorData" class="col-lg-4 mt-5">
+              <div class="card">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{mentor.fname}}  </h5>
+                  <p class="card-text clr1">{{mentor.jobTitle}}</p>
+                  <p class="card-text">Available</p>
+                  <a routerLink="/profile" class="card-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
